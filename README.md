@@ -4,7 +4,8 @@
 
 The Cricket Player and Match Statistics Management System is a sophisticated software solution that leverages the power of AVL (Adelson-Velsky and Landis) trees to efficiently manage and update player rankings within the context of cricket player and match statistics. This project focuses on the intricacies of implementing AVL trees to handle large datasets and maintain balanced and consistently updated player rankings.
 
-## the time complexities : 
+## the time complexities :  Every function from crud , sort , search , max , min in logarithmic time 
+
 | **Operation**        | **Time Complexity** | **Reason**                                               |
 |----------------------|----------------------|----------------------------------------------------------|
 | **Player Search**    | O(1)                 | Unordered map search is O(1) on average.                |
