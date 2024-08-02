@@ -22,7 +22,18 @@ The Cricket Player and Match Statistics Management System is a sophisticated sof
 
 *Overall Time Complexity for input_1 is dominated by the AVL tree operations, making it O(log n), where n is the number of players in the AVL tree.*
 
+## the space complexities :  
 
+| Operation          | Space Complexity | Reason                                                                |
+|--------------------|------------------|-----------------------------------------------------------------------|
+| **Player Search**  | O(1)             | Searching in an unordered map requires no additional space.           |
+| **Player Creation**| O(1)             | Creating a player object requires a constant amount of space.         |
+| **Player Update**  | O(1)             | Updating a player in a priority queue does not require extra space.   |
+| **Match Search**   | O(1)             | Searching in an unordered map for matches requires no additional space.|
+| **Match Creation** | O(1)             | Creating a match object requires a constant amount of space.          |
+| **Match Update**   | O(1)             | Updating a match in a set requires no additional space.               |
+| **Rankings Update**| O(1)             | Updating rankings requires a constant amount of space.                |
+| **AVL Tree Operations** | O(log n)    | Space complexity for the height of the tree affecting recursion stack.|
 
 
 AVL Tree Implementation:
