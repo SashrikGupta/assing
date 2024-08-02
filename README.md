@@ -4,6 +4,26 @@
 
 The Cricket Player and Match Statistics Management System is a sophisticated software solution that leverages the power of AVL (Adelson-Velsky and Landis) trees to efficiently manage and update player rankings within the context of cricket player and match statistics. This project focuses on the intricacies of implementing AVL trees to handle large datasets and maintain balanced and consistently updated player rankings.
 
+## the time complexities : 
+| **Operation**        | **Time Complexity** | **Reason**                                               |
+|----------------------|----------------------|----------------------------------------------------------|
+| **Player Search**    | O(1)                 | Unordered map search is O(1) on average.                |
+| **Player Creation**  | O(1)                 | The constructor of the player is O(1).                  |
+| **Player Update**    | O(log k)             | Inserting into priority queues is O(log k).             |
+| **Match Search**     | O(1)                 | Unordered map search is O(1) on average.                |
+| **Match Creation**   | O(1)                 | The constructor of the match is O(1).                   |
+| **Match Update**     | O(log p)             | Inserting into a set is O(log p).                        |
+| **Rankings Update**  | O(1)                 | The check function is O(1).                             |
+| **AVL Tree Search**  | O(log n)             | AVL tree search is O(log n).                            |
+| **AVL Tree Insert**  | O(log n)             | AVL tree insertion is O(log n).                         |
+| **AVL Tree Delete**  | O(log n)             | AVL tree deletion is O(log n).                          |
+| **AVL Tree Reinsert**| O(log n)             | Deletion and reinsertion combined is O(log n).          |
+
+*Overall Time Complexity for input_1 is dominated by the AVL tree operations, making it O(log n), where n is the number of players in the AVL tree.*
+
+
+
+
 AVL Tree Implementation:
 Balanced Rankings:
 
